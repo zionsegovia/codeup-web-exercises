@@ -92,14 +92,21 @@ NaN == NaN
 //let length = sample.length;
 //let result = sample.toUpperCase();
 //let result2 = sample.replace("Students!", "Class");
+//let cIndex = sampleJoinReplace.indexof('c');
 //console.log(sample.indexOf('c'));
+//let capCindex = sampleJoinReplace.indexOf('C')
 //console.log(sample.indexOf('C'));
+//let codeupWord = sampleJoinReplace.substring(capCIndex, 12);
 //console.log(sample.substring(6,12));
 
 //let TLM = 3
 //let BB = 5
 //let H = 1
-//let total = ((TLM + BB + H)*3
+//let total = (TLM + BB + H)*3
+
+
+
+
 
 //let googleTotal = 400
 //let googlePay = (googleTotal * 6);
@@ -112,16 +119,25 @@ NaN == NaN
 //let classschedule = true
 //let enrolled = classnotfull && classschedule;
 
+//let scheduleConflicts = false;
+//let maxClassSize = 30;
+//let currentClassSize = 24;
+//let canEnroll = !scheduleConflicts && (currentClassSize < maxClassSize);
+
+
+
 //let haspremium = true
 //let cartsize = 4
 //let validoffer = true
 //let HaveDiscount = validoffer && (cartsize > 2 || haspremium);
 
 
+
+
 let username = "codeup";
 let password = "notastrongpassword"
 
-if (password.length > 5){
+if (password.length >= 5){
     let password_length_pass = true;
 } else {
     let password_length_pass = false;
