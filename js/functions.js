@@ -101,6 +101,7 @@ alert("Tip amount: $" + tipAmount.toFixed(2));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount(originalPrice, discountPercent){
-return discountPercent / originalPrice * 100;
+    let discountAmount = originalPrice * (discountPercent/100);
+return discountPercent - discountAmount;
 }
 applyDiscount(12, .5);
