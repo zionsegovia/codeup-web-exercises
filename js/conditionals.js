@@ -21,15 +21,15 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor(){
-let colorPref = prompt("What Is your favorite color?")
+function analyzeColor_if(inputColor){
+let inputColor_lowerCase = inputColor.toLowerCase();
 
-if (colorPref === "blue"){
-  alert("Blue is the color of the ocean");
-} else if (color === "yellow") {
-  alert("Yellow is the color of a banana :(");
+if (inputColor_lowerCase === "blue"){
+  alert("Blue is the color of the ocean, scary...");
+} else if (inputColor_lowerCase === "yellow") {
+  alert("Yellow is the color of a banana, Yum!:(");
 } else {
-  alert("I have no knowledge of that color :(");
+  alert("I have no knowledge of that color man :(");
 }}
 
 // Don't change the next two lines!
@@ -50,15 +50,17 @@ analyzeColor(randomColor);
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-switch(colorPref) {
+function analyzeColor_Switch(inputColor) {
+let inputColor_lowerCase = inputColor.toLowerCase();
+switch(inputColor_lowerCase) {
     case "blue":
         alert("thats the color of the sky");
         break;
     case "red":
-        alert("thats the color of an apple");
+        alert("thats the color of an apple, check for worms!");
         break;
     default:
-        alert("I dont really know anything about that color");
+        alert("I dont really know anything about that color man");
         break;
 }
 
@@ -96,15 +98,15 @@ function calculateTool(luckyNumber, totalAmount){
     if (luckyNumber === 0){
         return totalAmount;
     } else if (luckyNumber === 1){
-        return totalAmount / 10;
+        return totalAmount - totalAmount * .1 ;
     } else if (luckyNumber === 2){
-        return totalAmount / 25;
+        return totalAmount - totalAmount * .25;
     }  else if (luckyNumber === 3){
-    return totalAmount / 35;
+    return totalAmount - totalAmount * .35;
 } else if (luckyNumber === 4) {
-        return totalAmount / 50;
+        return totalAmount - totalAmount * .5;
     } else if (luckyNumber === 5){
-        return 0; }}
+        return  0; }}
 
 
 /**
@@ -120,9 +122,9 @@ function calculateTool(luckyNumber, totalAmount){
 let billPrompt = prompt("What was your bill total?");
 let theirAnswer = (parseFloat`${billPrompt}`);
 let theMath = calculateTool(luckyNumber, theirAnswer);
-alert ("Your lucky number was " + luckyNumber + "Your price before the discount was "
+alert  ("Your lucky number was " + luckyNumber + "Your price before the discount was "
     + theirAnswer + "After the discount your",
-"total is " + theMath)
+"total is " + theMath);
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
