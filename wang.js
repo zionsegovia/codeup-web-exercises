@@ -19,3 +19,8 @@ let coolTemp = toCelcius(100);
 toFarenheit(123);
 let hotTemp = toFarenheit(123);
     console.log("Your hot temp is", hotTemp, "youre smoking baby");
+
+    function isNumbericAndNotNan(input){
+        return !isNaN(parseFloat(input)) && input !== null && typeof input !==
+            "boolean" && typeof input !== "string";
+    }

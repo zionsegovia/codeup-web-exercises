@@ -21,58 +21,57 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor_if(inputColor){
-let inputColor_lowerCase = inputColor.toLowerCase();
+//function analyzeColor_if(inputColor){
+//let inputColor_lowerCase = inputColor.toLowerCase();
 
-if (inputColor_lowerCase === "blue"){
-  alert("Blue is the color of the ocean, scary...");
-} else if (inputColor_lowerCase === "yellow") {
-  alert("Yellow is the color of a banana, Yum!:(");
-} else {
-  alert("I have no knowledge of that color man :(");
-}}
+//if (inputColor_lowerCase === "blue"){
+ // return("Blue is the color of the ocean, scary...");
+//} else if (inputColor_lowerCase === "yellow") {
+ // return("Yellow is the color of a banana, Yum!:(");
+//} else {
+ // return("I have no knowledge of that color man :(");
+//}}
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+//const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+//const randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-analyzeColor(randomColor);
-
+//analyzeColor_if(random);
+//console.log(analyzeColor_if(random));
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 function analyzeColor_Switch(inputColor) {
-let inputColor_lowerCase = inputColor.toLowerCase();
-switch(inputColor_lowerCase) {
-    case "blue":
-        alert("thats the color of the sky");
-        break;
-    case "red":
-        alert("thats the color of an apple, check for worms!");
-        break;
-    default:
-        alert("I dont really know anything about that color man");
-        break;
-}
+    let inputColor_lowerCase = inputColor.toLowerCase();
+    switch (inputColor_lowerCase) {
+        case "blue":
+            return("thats the color of the sky, i wonder why");
 
+        case "red":
+            return("thats the color of an apple, check for worms!");
+
+        default:
+            return("I dont really know anything about that color man");
+
+    }
+}
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-let newColor = prompt("What color are you thinking of right now?")
-let theirColor =  `${newColor}`;
-let displayColor = analyzeColor(theirColor);
+const newColor = prompt("What color are you thinking of right now?");
+alert(analyzeColor_Switch(newColor.toLowerCase()));
 /* ########################################################################## */
 
 /**
@@ -118,13 +117,12 @@ function calculateTool(luckyNumber, totalAmount){
  * price before the discount was, and what their price after the discount is.
  */
  //Generate a random number between 0 and 6
- let luckyNumber = Math.floor(Math.random() * 6);
+ const luckyNumber = Math.floor(Math.random() * 6);
 let billPrompt = prompt("What was your bill total?");
-let theirAnswer = (parseFloat`${billPrompt}`);
+let theirAnswer = parseFloat(`${billPrompt}`);
 let theMath = calculateTool(luckyNumber, theirAnswer);
-alert  ("Your lucky number was " + luckyNumber + "Your price before the discount was "
-    + theirAnswer + "After the discount your",
-"total is " + theMath);
+alert(`Your lucky number was ${luckyNumber}. Your price before the discount was
+ $${theirAnswer.toFixed(2)}. After the discount, your total is $${theMath.toFixed(2)}.`);
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -143,10 +141,21 @@ alert  ("Your lucky number was " + luckyNumber + "Your price before the discount
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-confirm("Do you want to enter a number?");
-if (confirm === true){
- let beans = prompt("What number do you want to give me?");
+const theirNumber = confirm("Would you like to give me a number?");
+if (theirNumber){
+ const userNumber = parseFloat(prompt("Enter a numner."))
+if (userNumber) % 2 === 0){
+alert ("That number is even");}
 } else {
-    if (confirm === false)
-        prompt("Okay then what are you doing here man???");
+    alert("That number is odd");
+
 }
+alert("That number plus 100 is" + (userNumber + 100));
+if (userNumber < 0){
+    alert ('That number is negative')
+} else if(userNumber > 0){
+    alert('That number is positive')
+} else {
+    alert("That number is neither man")
+}
+
