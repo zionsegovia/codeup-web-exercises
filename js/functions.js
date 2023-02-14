@@ -30,7 +30,7 @@ sayHello("Zion");
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-let myName = 'Zion';
+const myName = 'Zion';
 sayHello(myName);
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -80,8 +80,8 @@ function calculateTip(tipPercentage, billTotal) {
  * then display the dollar amount they should tip
  */
 
-let billTotal = parseInt(prompt("Enter your bill total, please:"));
-let tipPercentage = parseInt(prompt("What percent will you tip? :"));
+let billTotal = parseFloat(prompt("Enter your bill total, please:"));
+let tipPercentage = parseFloat(prompt("What percent will you tip? :"));
 let tipAmount = calculateTip(tipPercentage, billTotal);
 alert("Tip amount: $" + tipAmount.toFixed(2));
 
@@ -105,3 +105,4 @@ function applyDiscount(originalPrice, discountPercent){
 return discountPercent - discountAmount;
 }
 applyDiscount(12, .5);
+
