@@ -143,8 +143,8 @@ alert(`Your lucky number was ${luckyNumber}. Your price before the discount was
  */
 const theirNumber = confirm("Would you like to give me a number?");
 if (theirNumber){
- const userNumber = parseFloat(prompt("Enter a numner."))
-if (userNumber) % 2 === 0){
+ const userNumber = parseFloat(prompt("Enter a number."))
+if (userNumber % 2 === 0){
 alert ("That number is even");}
 } else {
     alert("That number is odd");
