@@ -24,3 +24,6 @@ let hotTemp = toFarenheit(123);
         return !isNaN(parseFloat(input)) && input !== null && typeof input !==
             "boolean" && typeof input !== "string";
     }
+
+
+
