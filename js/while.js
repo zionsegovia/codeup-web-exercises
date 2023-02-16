@@ -37,15 +37,15 @@ let coneInventory = randomNumber(50, 100);
 do {
     let conesNeeded = randomNumber(1, 5)
     if (conesNeeded > coneInventory){
-        console.log(`Cannot sell you ${conesNeeded}, I only have ${conesInventory}`);
-        console.log(`${conesInventory} sold....`);
-        conesInventory = 0;
+        console.log(`Cannot sell you ${conesNeeded} you fool, I only have ${coneInventory}`);
+        console.log(`${coneInventory} sold....`);
+        coneInventory = 0;
 
     } else {
     console.log(`${conesWanted} sold...`)
-    conesInventory = conesInventory - conesNeeded;
+    coneInventory = coneInventory - conesNeeded;
     }
     console.log(`$conesInventory} left`);
-    } while (conesInventory > 0);
+    } while (coneInventory > 0);
     console.log("Yay! ive sold them all now i can return to my swamp!")
 
