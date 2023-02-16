@@ -6,7 +6,7 @@ while (i < 16){
 
  */
 
-let totalCones = Math.floor(Math.random() * 51) + 50;
+/* let totalCones = Math.floor(Math.random() * 51) + 50;
 
 
 do {
@@ -25,3 +25,27 @@ do {
 } while (totalCones > 0);
 
 console.log("Yay, I FINALLY sold all my cones and can go home to my poor wife and kids now!");
+*/
+
+// the jason version is below
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+let coneInventory = randomNumber(50, 100);
+
+do {
+    let conesNeeded = randomNumber(1, 5)
+    if (conesNeeded > coneInventory){
+        console.log(`Cannot sell you ${conesNeeded}, I only have ${conesInventory}`);
+        console.log(`${conesInventory} sold....`);
+        conesInventory = 0;
+
+    } else {
+    console.log(`${conesWanted} sold...`)
+    conesInventory = conesInventory - conesNeeded;
+    }
+    console.log(`$conesInventory} left`);
+    } while (conesInventory > 0);
+    console.log("Yay! ive sold them all now i can return to my swamp!")
+
