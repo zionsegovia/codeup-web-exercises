@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My First HTML Form</title>
+  <link rel="stylesheet" href="css/resets.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+<h2>User Login</h2>
+<form method="POST" action="https://request-inspector.glitch.me">
+  <p>
+    <label for="username">Username</label>
+    <input id="username" name="username"
+           type="text" placeholder="Enter username here">
+  </p>
+  <p>
+    <label for="password">Password</label>
+    <input id="password" name="password"
+           type="password" placeholder="Enter password here">
+  </p>
+  <p>
+    <button type="submit">Login</button>
+  </p>
+</form>
+<h2>Compose an Email</h2>
+<form method="get" action="https://request-inspector.glitch.me">
+
+  <p>
+    <label for="subject">Subject</label>
+    <input id="subject" name="subject"
+           type="text">
+  </p>
+  <p>
+    <label for="body">Body</label>
+    <textarea id="body" name="body" rows ="5"
+              cols="40"></textarea>
+
+  </p>
+
+  <p>
+    <button type="submit">Send!</button>
+  </p>
+  <p>
+    <input type="checkbox" id="copytosent" name="copytosent" value="yes" checked>
+    <label for="copytosent">Save a copy to sent folder?</label>
+  </p>
+</form>
+
+
+
+
+<h2>Multiple choice test</h2>
+<form method="POST" action="https://request-inspector.glitch.me">
+  <p>What is your favorite color?</p>
+  <label>Green
+    <input type="radio" name="q1" value="green">
+  </label>
+  <label>Blue
+    <input type="radio" name="q1" value="blue">
+
+  </label>
+  <label>Yellow
+    <input type="radio" name="q1" value="yellow">
+
+  </label>
+  <label>Red
+    <input type="radio" name="q1" value="red">
+  </label>
+  </p>
+  <p>What is going on here?</p>
+  <label>Nothing
+    <input type="radio" name="q2" value="nothing">
+  </label>
+  <label>I Dont Know
+    <input type="radio" name="q2" value="idk">
+
+  </label>
+  <label>Something Evil
+    <input type="radio" name="q2" value="somethingevil">
+
+  </label>
+  <label>Breakfast!
+    <input type="radio" name="q2" value="breakfast">
+  </label>
+  </p>
+  <p>What pies have you eaten?</p>
+  <label><input type="checkbox" id="os1" name="os[]" value="apple"> Apple</label>
+  <label><input type="checkbox" id="os2" name="os[]" value="blueberry">Blueberry</label>
+  <label><input type="checkbox" id="os3" name="os[]" value="strawberry"> Strawberry</label>
+  <p>
+    <label for="os">What Kind of Lizards Do You Love?</label>
+    <select id="os" name="os[]" multiple>
+      <option value="1">Friendly Lizards</option>
+      <option value="2">Evil Lizards</option>
+      <option value="3">Giant Lizards</option>
+      <option value="4">Rare Lizards</option>
+    </select>
+  </p>
+  <button type="submit">Submit</button>
+
+
+
+
+</form>
+<h2>Select Testing</h2>
+<form method="POST" action="https://request-inspector.glitch.me">
+  <label for="beans">Do you like beans? </label>
+  <select id="beans" name="beans">
+    <option value="1">Love Them</option>
+    <option value="0">Hate Them</option>
+  </select>
+  <button type="submit">Submit</button>
+
+
+
+
+
+
+
+</body>
+</html>

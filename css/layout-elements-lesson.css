@@ -1,0 +1,9 @@
+/* this is a global css folder */
+header.container{
+    height: 80px;
+    border-bottom: 1px;
+}
+.container.hero-scene{
+    height: 80vh;
+    background-color: lightgray;
+}

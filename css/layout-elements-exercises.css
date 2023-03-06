@@ -1,0 +1,47 @@
+header.container{
+    height: 80px;
+    box-shadow: 0 0 15px -9px #000;
+    position: relative;
+}
+.container.hero-scene{
+    height: 80vh;
+    background-color: lightgray;
+
+}
+
+.container.hero-square{
+    height: 60vh;
+    width: 60vh;
+    background-color: dimgrey;
+}
+.container.features{
+    height: 40px;
+}
+button{
+    color: white;
+    background-color: dimgrey;
+    border: unset;
+    padding: 5px 20px;
+    border-radius: 3px;
+
+
+}
+.container.features-extra{
+    height: 20vh;
+
+}
+h1{
+    color: dimgrey;
+    font-size: xxx-large;
+}
+p{
+    color: dimgrey;
+    font-size: small;
+}
+
+.image{
+    width:20px;
+}
+.imagetwo{
+    width: 100px;
+}

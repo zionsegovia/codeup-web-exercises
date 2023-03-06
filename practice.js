@@ -98,15 +98,15 @@ console.log('stringslist follows => ', stringsList);
 
 //loop thru array
 
-for(let i = 0; i < fruits.length; i++){
-    let fruit = fruits[i];
-    console.log(fruit)
-}
-cosnt forEach = (callback) => {
-    ...
-    callback(element, index, array);
+//for(let i = 0; i < fruits.length; i++){
+  //  let fruit = fruits[i];
+ //   console.log(fruit)
+//}
+//cosnt forEach = (callback) => {
+    //...
+  //  callback(element, index, array);
 
-}
+//}
 
 let favFruits = [];
 fruits.forEach(function(fruit , i,array){
