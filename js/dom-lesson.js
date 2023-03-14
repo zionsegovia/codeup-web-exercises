@@ -35,3 +35,11 @@ buttonNode.addEventListener('click', function(){
 });
 
 btnColumn.appendChild(buttonNode);
+
+clickMe.addEventListener('click', function(){
+    alert('finally... someone clicked me.....');
+})
+const handleClick = () => {
+    alert('finally... someone clicked me.....');
+}
+
