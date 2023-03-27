@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;700&display=swap');
+body  {
+    background:url("/images/trainback.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+
+
+    font-family: 'Roboto Mono', serif ;
+}
+
+.others {
+    max-height: 200px;
+    max-width: 200px;
+    padding-right: 100px;
+}
+
+.container{
+    padding: 23px 60px;
+    color: navajowhite;
+
+}
+.curInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dateContainer{
+font-weight: 100;
+    ;
+}
+.dateContainer .time{
+    font-size: 70px;
+}
+.dateContainer #am-pm{
+    font-size: 35px;
+    margin-left: 10px;
+}
+.dateContainer .date{
+    font-size: 35px;
+}
+.curInfo .others {
+    display: flex;
+    flex-direction: column;
+    background: rgba(55, 55, 139, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.curInfo .others .weatherStuff{
+    display: flex;
+    justify-content: space-between;
+}
+.theForecast{
+    background: rgba(55, 55, 139, 0.29);
+    padding: 25px;
+    position: fixed;
+    display: flex;
+    color: navajowhite;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.theForecast .today .temp{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.theForecast .theOtherForecasts {
+    display: flex;
+}
+.theOtherForecasts .forecastStuff{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px;
+    border: 1px solid rgba(55, 55, 139, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: auto;
+
+}
+.theOtherForecasts .forecastStuff .day{
+    padding: 5px 15px;
+    background: rgba(55, 55, 139, 0.67);
+    border-radius: 40px;
+    text-align: center;
+}
+.theOtherForecasts .forecastStuff .temp{
+    font-weight: 100;
+}
+.weatherStuffName{
+    color: rgba(255, 222, 173, 0.68);
+    font-weight: 700;
+    text-wrap: none;
+    text-align: center;
+}
+
+.forecastStuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px;
+    border: 1px solid rgba(55, 55, 139, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 100px;
+    max-height: 200px;
+    width: 150px;
+    overflow: auto;
+    ;
+}
+.weatherLogo{
+    padding-top: 10px;
+    height: 100px;
+    width: 100px;
+}
+.theOtherForecasts .forecastStuff::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+.theOtherForecasts{
+    padding-right: 150px;
+}
+.weathername {
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#map{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+
+}
+#setMarkerForm {
+    color: navajowhite;
+    padding-left: 35px;
+    padding-bottom: 10px;
+
+}
+#setMarkerButton{
+    background-color: rgba(55, 55, 139, 0.47);
+    border: 0;
+    color: navajowhite;
+}
+#setMarker {
+    background-color: rgba(55, 55, 139, 0.47);
+    border: 0;
+    color: navajowhite;
+}
