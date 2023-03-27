@@ -1,0 +1,5 @@
+.skyPicture{
+    background-image: url(/images/coolsky.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

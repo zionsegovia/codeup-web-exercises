@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>food map</title>
+    <script src="js/keys.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<body>
+<form>
+    <label for="zoom">Set zoom:</label>
+    <input type="text" name="zoom" id="zoom">
+    <button id="zoomSubmit">Zoom</button>
+</form>
+<form>
+    <label for="setMarker">Enter an address:</label>
+    <input type="text" name="setMarker" id="setMarker">
+    <button id="setMarkerButton">Set Marker</button>
+</form>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = MAPBOX_API_TOKEN;
+  const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v12', // style URL
+    center: [-90.07507, 29.95465], // starting position [lng, lat]
+    zoom: 11, // starting zoom
+  });
+</script>
+<script src="js/mapbox_maps_api.js"></script>
+<button id="hideBtn">Hide Markers</button>
+
+</body>
+</html>

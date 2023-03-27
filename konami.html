@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script>
+  "use strict";
+
+  $(document).keyup(function(event){
+    console.log(event.keyCode);
+  });
+</script>
+  <script>
+    let cheatKeys = {
+
+    37: 'left',
+    38: 'up',
+    39: 'right',
+    40: 'down',
+    65: 'a',
+    66: 'b',
+    13: 'enter'
+  };
+
+    let konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter'];
+
+
+    let konamiCodePosition = 0;
+    document.addEventListener('keydown', function(e) {
+    let key = cheatKeys[e.keyCode];
+    let requiredKey = konamiCode[konamiCodePosition];
+    if (key === requiredKey) {
+    konamiCodePosition++;
+
+    if (konamiCodePosition === konamiCode.length) {
+    cheatTime();
+    konamiCodePosition = 0;
+  }
+  } else {
+    konamiCodePosition = 0;
+  }
+  });
+    function cheatTime() {
+    alert("you added 30 lives");
+  }
+</script>
+</body>
+</html>
