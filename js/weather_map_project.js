@@ -91,6 +91,7 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
             dailyForecasts[dateKey]['humidity'] = forecast.main.humidity;
             dailyForecasts[dateKey]['windSpeed'] = forecast.wind.speed;
             dailyForecasts[dateKey]['weather'] = forecast.weather;
+
         }
     });
     console.log(dailyForecasts, 'the daily');
